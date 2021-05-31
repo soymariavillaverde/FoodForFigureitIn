@@ -1,14 +1,4 @@
-body{
-    background-color: rgb(228, 217, 158);
-}
-.container{
-    background-color: white;
-    width: 720px;
-    height: fit-content;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 5%;
-}
+
 
 .menu-superior{
     box-sizing: border-box;

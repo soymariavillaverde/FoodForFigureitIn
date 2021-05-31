@@ -1,0 +1,17 @@
+@import url(./css-content/footer-style.css);
+@import url(./css-content/header-style.css);
+@import url(./css-content/nav-style.css);
+@import url(./css-content/main-style.css);
+
+
+body{
+    background-color: rgb(228, 217, 158);
+}
+.container{
+    background-color: white;
+    width: 720px;
+    height: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5%;
+}
