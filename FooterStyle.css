@@ -28,3 +28,43 @@
     width: 33.3%;
     align-content: flex-end;
 }
+
+/* --------------------------------------- -->*/
+/* --------------------------------------- -->*/
+/* --------------------------------------- -->*/
+/* --------------------------------------- -->*/
+/* ---------------CARRITO ---------------- -->*/
+
+.navfootercarrito{
+    box-sizing: border-box;
+    width: 100%;
+    background-color: #FF6B00;
+    border-radius: 50px;
+    padding: 5%;
+}
+
+.factura{
+    display: flex;
+    flex-direction: column;
+}
+
+.concepto-factura{
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.p-basico-factura{
+    font-family: 'Public Sans', sans-serif;
+    font-size: 30px;
+    font-style:normal;
+    color: white;
+}
+
+.p-negrita-factura{
+    font-family: 'Public Sans', sans-serif;
+    font-size: 32px;
+    font-style: semi-bold;
+    color: white;
+
+}
