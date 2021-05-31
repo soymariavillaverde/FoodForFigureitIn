@@ -1,3 +1,30 @@
-.p{
-    margin: 1%;
+.navfooter{
+    position: relative;
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.tamañoimgfooter{
+    width: 50px;
+    height: 50px;
+}
+.button-compra{
+    width: 50px;
+    height: 50px;
+}
+.imgbutton-compra{
+    width: 50px;
+    height: 50px; 
+
+}
+.contenedor1{
+    width: 33.3%;
+}
+.contenedor2{
+    width: 33.3%;
+}
+.contenedor3{
+    width: 33.3%;
+    align-content: flex-end;
 }

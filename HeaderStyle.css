@@ -1,3 +1,52 @@
-.p{
-    margin: 1%;
+body{
+    background-color: rgb(228, 217, 158);
+}
+.container{
+    background-color: white;
+    width: 720px;
+    height: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5%;
+}
+
+.menu-superior{
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3%;
+    align-items: center;
+}
+
+.logo {
+    height: 25%;
+    width: 25%;
+}
+
+.buttonnav{
+    border: none;
+    background-color: #FFFFFF;
+    display:flex;
+    justify-content: flex-end;
+}
+
+.imgnav{
+    width: 15%;
+    height: 15%;
+}
+
+h1{
+    font-family: 'Public Sans', sans-serif ;
+    font-size: 70px;
+    font-style: bold;
+    margin: 0% 0% 4% 0%;
+}
+
+.textoHeader {
+    font-family: 'Public Sans', sans-serif ;
+    font-size: 28px;
+    font-style: medium;
+    color: #A9A8AE;
+    margin-bottom: 2%;
 }
