@@ -13,12 +13,12 @@ main {
 
 .plato-individual{
     display: flex;
-    margin-bottom: 20px;
+    margin-bottom: 3%;
 }
-
 
 .plato-comida {
     width: 20%;
     height: 10%;
     border-radius: 20px;
+    margin-right: 3%;
 }
