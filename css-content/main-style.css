@@ -9,6 +9,8 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    margin-bottom: 30px;
+
 }
 
 .plato-individual{
@@ -16,9 +18,21 @@ main {
     margin-bottom: 3%;
 }
 
+.nombre-plato {
+    font-size: 40px;
+}
+
+.precio-plato{
+    font-size: 30px;
+}
+
+.descripcion-plato{
+    font-size: 20px;
+}
+
 .plato-comida {
-    width: 20%;
-    height: 10%;
+    width: 30%;
+    height: 20%;
     border-radius: 20px;
     margin-right: 3%;
 }
