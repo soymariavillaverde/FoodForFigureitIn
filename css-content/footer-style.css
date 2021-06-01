@@ -14,15 +14,15 @@
     position: relative;
     display: flex;
     align-items: center;
-    background-color: rgba(255, 255, 255, 0);
     border: none;
     width: 13%;
     top: -60px;
+    background-color: rgba(255, 255, 255, 0);
 }
 .imgbutton-compra{
     width: 80px;
     height: 80px; 
-
+    filter: drop-shadow(10px 10px 5px rgb(182, 179, 179));
 }
 
 /* --------------------------------------- -->*/
