@@ -3,6 +3,11 @@
 @import url(./css-content/nav-style.css);
 @import url(./css-content/main-style.css);
 
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans&display=swap'); 
+
 html {
     width: 100%;
 }
