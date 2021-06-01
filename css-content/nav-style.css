@@ -1,3 +1,7 @@
+nav {
+        margin-bottom: 15px;
+}
+
 .categorias {
         position: relative;
         display: flex;
