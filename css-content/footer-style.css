@@ -1,10 +1,25 @@
+.containerFooter{
+    z-index: 10;
+    background-color: green;
+    width: 100%;
+    max-width: 720px;
+    height: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    position: fixed;
+    bottom: 0px;
+    display: flex;
+    justify-content: center;
+}
 .navfooter{
     position: relative;
     display: flex;
-    justify-content: space-around;
-    background-color: rgb(255, 255, 255);
+    justify-content: space-between;
+    background-color: rgb(1, 255, 255);
     width: 100%;
-    margin-block-end: 5%;
+    z-index: 10;
+    
+    
 }
 .tamañoimgfooter{
     width: 50px;

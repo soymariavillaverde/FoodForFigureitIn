@@ -3,11 +3,12 @@ main {
     box-sizing: border-box;
     width: 100%;
     padding: 5px;
+
 }
 
 .platos {
     margin-bottom: 30px;
-    height: 80%;
+    height: 500px;
     width: 100%;
     overflow-y: scroll;
 
@@ -56,4 +57,5 @@ main {
     font-family: 'Public Sans', sans-serif ;
     font-size: 45px;
     font-weight: 700;
+    
 }
