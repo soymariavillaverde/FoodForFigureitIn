@@ -24,3 +24,7 @@ body{
     margin-right: auto;
     padding: 5%;
 }
+
+::-webkit-scrollbar { 
+    display: none; 
+}

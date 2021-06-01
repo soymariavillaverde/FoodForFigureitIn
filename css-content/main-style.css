@@ -6,10 +6,10 @@ main {
 }
 
 .platos {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
     margin-bottom: 30px;
+    height: 80%;
+    width: 100%;
+    overflow-y: scroll;
 
 }
 
@@ -20,19 +20,25 @@ main {
 
 .nombre-plato {
     font-size: 40px;
+    margin-top: 0px;
+    margin-bottom: 5px;
 }
 
 .precio-plato{
     font-size: 30px;
+    color:rgba(233, 128, 63, 1);
+    margin-top: 0px;
+
 }
 
 .descripcion-plato{
-    font-size: 20px;
+    font-size: 25px;
+    color: #A9A8AE;
 }
 
 .plato-comida {
     width: 30%;
-    height: 20%;
+    height: 30%;
     border-radius: 20px;
     margin-right: 3%;
 }
