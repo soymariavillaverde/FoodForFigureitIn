@@ -1,8 +1,7 @@
 nav {
-        margin-bottom: 15px;
         width: 100%;
         height: 120%;
-}
+    }
 
 .categorias {
         position: relative;
@@ -13,6 +12,8 @@ nav {
         overflow: scroll;
         width: 100%;
         height: 50%;
+        margin-bottom: 15px;
+        
         
 }
 

@@ -8,26 +8,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@200;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Public+Sans&display=swap'); 
 
-html {
-    width: 100%;
+
+*{
+    box-sizing: border-box;
 }
 
 
-body{
-    background-color: rgb(228, 217, 158);
-    margin: 0px;
-}
 .container{
     background-color: white;
-    max-width: 720px;
     height: fit-content;
     margin-left: auto;
     margin-right: auto;
-    padding: 5%;
     max-width: 720px;
     min-width: 350px;
 }
 
 ::-webkit-scrollbar { 
     display: none; 
+}
+
+header {
+    margin-right: 5%;
+    margin-left: 5%;
+    padding-top: 5%;
+}
+
+body{
+    background-color: rgb(255, 255, 255);
 }
