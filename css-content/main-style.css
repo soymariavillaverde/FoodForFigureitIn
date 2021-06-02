@@ -45,7 +45,25 @@ main {
     margin-right: 3%;
 }
 
+.precioYcontador {
+    display: flex;
+    justify-content: space-between;
+}
 
+.contador {
+    display: flex;
+}
+
+.menos {
+    border: none;
+    background-color: white;
+
+}
+
+.mas {
+    border: none;
+    background-color: white;
+}
 
 /* --------------------------------------- -->*/
 /* --------------------------------------- -->*/
