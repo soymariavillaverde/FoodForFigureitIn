@@ -22,12 +22,16 @@ main {
 }
 
 .nombre-plato {
+    font-family: 'Public Sans', sans-serif ;
+    font-style: bold;
     font-size: 40px;
     margin-top: 0px;
     margin-bottom: 5px;
 }
 
 .precio-plato{
+    font-family: 'Public Sans', sans-serif ;
+    font-style: bold;
     font-size: 30px;
     color:rgba(233, 128, 63, 1);
     margin-top: 10px;
@@ -37,7 +41,9 @@ main {
 }
 
 .descripcion-plato{
-    font-size: 25px;
+    font-family: 'Public Sans', sans-serif ;
+    font-style: normal;
+    font-size: 37pt;
     color: #A9A8AE;
     margin-top: -20px;
     position: relative;
