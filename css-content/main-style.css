@@ -1,10 +1,10 @@
 main {
     position: relative;
     box-sizing: border-box;
-    background-color: rgba(202, 202, 202, 0.219);
+    background-color: rgba(202, 202, 202, 0);
     width: 100%;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 4%;
+    padding-right: 4%;
 }
 
 .platos {
