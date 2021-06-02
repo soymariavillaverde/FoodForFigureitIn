@@ -36,7 +36,7 @@ nav {
         background-color: white ;
         border: 1px  white;
         width: 87%;
-        height: 100%;
+        height: 20%;
         border-radius: 15px;
         padding: 5px; 
         box-sizing: content-box; 
@@ -52,15 +52,15 @@ nav {
 .imgcat {
         margin-top: 5px;
         box-sizing: border-box;
-        width: 90%;
-        height: 90%;
+        width: 80%;
+        height: 80%;
        
 }
 
 .SeccionesNav {
         
         color: black;
-        font-size: 100%;
+        font-size: 22px;
         
 }
 
