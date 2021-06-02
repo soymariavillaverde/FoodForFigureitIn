@@ -18,6 +18,7 @@ main {
 .plato-individual{
     display: flex;
     margin-bottom: 3%;
+    margin-top: 3%;
 }
 
 .nombre-plato {
@@ -29,15 +30,18 @@ main {
 .precio-plato{
     font-size: 30px;
     color:rgba(233, 128, 63, 1);
-    margin-top: 0px;
-    margin-right: 25px;
+    margin-top: 10px;
     width: 80px;
+    position: relative;
+    top: -30px;
 }
 
 .descripcion-plato{
     font-size: 25px;
     color: #A9A8AE;
     margin-top: -20px;
+    position: relative;
+    top: -30px;
 }
 
 .plato-comida {
@@ -47,12 +51,28 @@ main {
     margin-right: 3%;
 }
 
-.precioYcontador {
+.nombreYcontador {
+    width: 400px;
     display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    justify-content: space-between;
 }
 
 .contador {
     display: flex;
+    flex-direction: column-reverse;
+}
+
+.plus{
+    border: none;
+    background-color: white;
+    width: 35px;
+    height: 35px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .menos, .mas {
@@ -64,6 +84,10 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.menos{
+    position: relative;
+    top: -10px;
 }
  .signo-{
      position: relative;
