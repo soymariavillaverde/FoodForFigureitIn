@@ -9,9 +9,9 @@ main {
 
 .platos {
     margin-bottom: 30px;
-    height: 500px;
     width: 100%;
     overflow-y: scroll;
+    margin-bottom: 110px;
 
 }
 
@@ -44,12 +44,6 @@ main {
     border-radius: 20px;
     margin-right: 3%;
 }
-
-.espacioEnBlanco {
-    height: 40px;
-    background-color: rgba(202, 202, 202, 0.019);
-}
-
 
 
 
