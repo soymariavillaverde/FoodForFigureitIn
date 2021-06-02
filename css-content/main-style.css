@@ -30,12 +30,14 @@ main {
     font-size: 30px;
     color:rgba(233, 128, 63, 1);
     margin-top: 0px;
-
+    margin-right: 25px;
+    width: 80px;
 }
 
 .descripcion-plato{
     font-size: 25px;
     color: #A9A8AE;
+    margin-top: -20px;
 }
 
 .plato-comida {
@@ -47,23 +49,33 @@ main {
 
 .precioYcontador {
     display: flex;
-    justify-content: space-between;
 }
 
 .contador {
     display: flex;
 }
 
-.menos {
+.menos, .mas {
     border: none;
     background-color: white;
-
+    width: 35px;
+    height: 35px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+ .signo-{
+     position: relative;
+     top: -3px;
+ }
 
-.mas {
-    border: none;
-    background-color: white;
-}
+ .numeroContador{
+     margin-left: 15px;
+     margin-right: 15px;
+     position: relative;
+     top: -7px;
+ }
 
 /* --------------------------------------- -->*/
 /* --------------------------------------- -->*/
