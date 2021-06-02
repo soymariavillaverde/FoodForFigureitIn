@@ -1,6 +1,6 @@
 nav {
         width: 100%;
-        height: 120%;
+        height: 120%;     
     }
 
 .categorias {
@@ -11,8 +11,8 @@ nav {
         justify-content: space-between;
         overflow: scroll;
         width: 100%;
-        height: 50%;
-        margin-bottom: 15px;
+        height: 150px;
+        
         
         
 }
@@ -23,9 +23,8 @@ nav {
         flex: 0 0 auto;
         width: 20%;
         height: 100%;
-        margin-left: 10px;
-        margin-bottom: 25px;
-        margin-top: 10px;
+        margin-left: 10px; 
+        margin-top: 25px;
         
 }
 .button-slider {
@@ -35,11 +34,12 @@ nav {
         color: white;
         background-color: white ;
         border: 1px  white;
-        width: 87%;
-        height: 20%;
+        width: 85%;
+        height: 68%;
         border-radius: 15px;
-        padding: 5px; 
+        padding: 7px; 
         box-sizing: content-box; 
+        justify-content: space-between;
         
 }
 
@@ -53,16 +53,17 @@ nav {
         margin-top: 5px;
         box-sizing: border-box;
         width: 80%;
-        height: 80%;
+        height: 60%;
        
 }
 
 .SeccionesNav {
-        
         color: black;
-        font-size: 22px;
-        
+        font-size: 18px; 
+          
 }
+
+
 
 /* --------------------------------------- -->*/
 /* --------------------------------------- -->*/
