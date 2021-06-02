@@ -1,0 +1,50 @@
+
+
+.menu-superior{
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    
+    margin-bottom: 3%;
+    align-items: center;
+}
+
+.logo {
+    height: 25%;
+    width: 25%;
+}
+
+.buttonnav{
+    border: none;
+    background-color: #FFFFFF;
+    display:flex;
+    justify-content: flex-end;
+}
+
+.imgnav{
+    width: 15%;
+    height: 15%;
+}
+
+.titulo-header{
+    font-family: 'Public Sans', sans-serif ;
+    font-size: 40pt;
+    font-style: bold;
+    margin: 0% 0% 4% 0%;
+}
+
+.textoHeader {
+    font-family: 'Public Sans', sans-serif ;
+    font-size: 1.2em;
+    font-style: medium;
+    color: #A9A8AE;
+    margin-bottom: 2%;
+}
+
+
+/* --------------------------------------- -->*/
+/* --------------------------------------- -->*/
+/* --------------------------------------- -->*/
+/* --------------------------------------- -->*/
+/* ---------------CARRITO ---------------- -->*/

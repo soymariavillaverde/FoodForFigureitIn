@@ -1,0 +1,115 @@
+main {
+    position: relative;
+    box-sizing: border-box;
+    background-color: rgba(202, 202, 202, 0);
+    width: 100%;
+    padding-left: 4%;
+    padding-right: 4%;
+}
+
+.platos {
+    margin-bottom: 30px;
+    width: 100%;
+    overflow-y: scroll;
+    margin-bottom: 110px;
+
+}
+
+.plato-individual{
+    display: flex;
+    margin-bottom: 3%;
+}
+
+.img-plato{
+    width: 40%;
+}
+
+.plato-contenido{
+    margin-left: 2%;
+    width: 50%;
+}
+
+.nombre-plato {
+    width: 100%;
+    font-size: calc(1.5em + 1vw);
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.precio-plato{
+    width: 100%;
+    font-size: calc(1.2em + 1vw);
+    color:rgba(233, 128, 63, 1);
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.descripcion-plato{
+    width: 100%;
+    font-size: calc(0.8em + 1vw);
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: #A9A8AE;
+}    
+
+.plato-comida {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.nombreYcontador {
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.contador {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.menos, .mas {
+    border: none;
+    background-color: white;
+    width: 35px;
+    height: 35px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menos{
+    position: relative;
+    top: -10px;
+}
+
+.signo+{
+    position: relative;
+}
+ .signo-{
+     position: relative;
+     font-size: 35px;
+     margin-left: -2px;
+     top: -6px;
+ }
+
+ .numeroContador{
+     margin-left: 13px;
+     position: relative;
+     top: -7px;
+ }
+
+/* --------------------------------------- -->*/
+/* --------------------------------------- -->*/
+/* --------------------------------------- -->*/
+/* --------------------------------------- -->*/
+/* --------------- CARRITO --------------- -->*/
+
+.cart-title{
+    font-family: 'Public Sans', sans-serif ;
+    font-size: 45px;
+    font-weight: 700;
+    
+}

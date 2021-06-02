@@ -1,0 +1,38 @@
+@import url(./css-content/footer-style.css);
+@import url(./css-content/header-style.css);
+@import url(./css-content/nav-style.css);
+@import url(./css-content/main-style.css);
+
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@200;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans&display=swap'); 
+
+
+*{
+    box-sizing: border-box;
+}
+
+
+.container{
+    background-color: white;
+    height: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 720px;
+    min-width: 350px;
+}
+
+::-webkit-scrollbar { 
+    display: none; 
+}
+
+header {
+    margin-right: 5%;
+    margin-left: 5%;
+    padding-top: 5%;
+}
+
+body{
+    background-color: rgb(255, 255, 255);
+}
