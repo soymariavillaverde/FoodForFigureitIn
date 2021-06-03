@@ -12,83 +12,61 @@ main {
     width: 100%;
     overflow-y: scroll;
     margin-bottom: 110px;
-
-}
-
-.div-imagen{
-    width: 40%;
 }
 
 .plato-individual{
-    width: 100%;
     display: flex;
-    justify-content: space-between;
-    align-items:flex-start;
     margin-bottom: 3%;
-    margin-top: 3%;
 }
 
-.plato-descripcion{
-    width: 60%;
-    margin-bottom: 10%;
+.img-plato{
+    width: 40%;
+}
 
+.plato-contenido{
+    margin-left: 2%;
+    width: 50%;
 }
 
 .nombre-plato {
     width: 100%;
-    font-family: 'Public Sans', sans-serif ;
-    font-style: bold;
-    font-size: 40px;
-    position: relative;
+    font-size: calc(1.5em + 1vw);
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 .precio-plato{
     width: 100%;
-    font-family: 'Public Sans', sans-serif ;
-    font-style: bold;
-    font-size: 30px;
+    font-size: calc(1.2em + 1vw);
     color:rgba(233, 128, 63, 1);
-    position: relative;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 .descripcion-plato{
     width: 100%;
-    font-family: 'Public Sans', sans-serif ;
-    font-style: normal;
-    font-size: 18px;
+    font-size: calc(0.8em + 1vw);
+    margin-top: 0px;
+    margin-bottom: 0px;
     color: #A9A8AE;
-    position: relative;
-}
+}    
 
 .plato-comida {
     width: 100%;
     height: 100%;
     border-radius: 20px;
-    margin-right: 3%;
 }
 
 .nombreYcontador {
-    width: 100%;
+    width: 10%;
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    justify-content: space-between;
 }
 
 .contador {
     display: flex;
     flex-direction: column-reverse;
-}
-
-.plus{
-    border: none;
-    background-color: white;
-    width: 35px;
-    height: 35px;
-    border-radius: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .menos, .mas {
@@ -105,14 +83,19 @@ main {
     position: relative;
     top: -10px;
 }
+
+.signo+{
+    position: relative;
+}
  .signo-{
      position: relative;
-     top: -3px;
+     font-size: 35px;
+     margin-left: -2px;
+     top: -6px;
  }
 
  .numeroContador{
-     margin-left: 15px;
-     margin-right: 15px;
+     margin-left: 13px;
      position: relative;
      top: -7px;
  }
