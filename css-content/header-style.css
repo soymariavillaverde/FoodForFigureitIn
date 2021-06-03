@@ -31,7 +31,7 @@
     font-family: 'Public Sans', sans-serif ;
     font-size: 40pt;
     font-style: bold;
-    margin: 0% 0% 4% 0%;
+    margin: 0% 0% 0% 0%;
 }
 
 .textoHeader {
@@ -39,7 +39,8 @@
     font-size: 1.2em;
     font-style: medium;
     color: #A9A8AE;
-    margin-bottom: 2%;
+    margin-top: 10px;
+    margin-bottom: 0px;
 }
 
 

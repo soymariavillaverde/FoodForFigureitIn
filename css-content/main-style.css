@@ -22,39 +22,51 @@ main {
 
 .img-plato{
     width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .plato-contenido{
     margin-left: 2%;
     width: 50%;
+    padding-top: 8px;
 }
 
 .nombre-plato {
     width: 100%;
-    font-size: calc(1.5em + 1vw);
+    font-size: calc(1.1em + 1vw);
     margin-top: 0px;
     margin-bottom: 0px;
+    font-family: 'Public Sans', sans-serif ;
 }
 
 .precio-plato{
     width: 100%;
-    font-size: calc(1.2em + 1vw);
+    font-size: calc(0.9em + 1vw);
     color:rgba(233, 128, 63, 1);
     margin-top: 0px;
     margin-bottom: 0px;
+    font-family: 'Public Sans', sans-serif ;
 }
 
 .descripcion-plato{
     width: 100%;
-    font-size: calc(0.8em + 1vw);
+    font-size: calc(0.7em + 1vw);
     margin-top: 0px;
     margin-bottom: 0px;
     color: #A9A8AE;
+    overflow: hidden;
+    max-width: 17ch;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    font-family: 'Public Sans', sans-serif ;
 }    
 
 .plato-comida {
-    width: 100%;
-    height: 100%;
+    width: 80%;
     border-radius: 20px;
 }
 
@@ -72,7 +84,7 @@ main {
 
 .menos, .mas {
     border: none;
-    background-color: white;
+    background-color: rgb(243, 243, 243);
     width: 35px;
     height: 35px;
     border-radius: 5px;
