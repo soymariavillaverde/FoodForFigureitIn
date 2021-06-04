@@ -30,15 +30,22 @@
 .button-compra{
     position: relative;
     display: flex;
+    justify-content: center;
     align-items: center;
     border: none;
+    width: 20%;
+    padding-bottom: 11%;
     top: -40px;
-    background-color: rgba(255, 255, 255, 0);
+    background-color: #FF6B00;
+    border-radius: 100%;
+    filter: drop-shadow(10px 10px 5px rgba(182, 179, 179, 0.678));
 }
 .imgbutton-compra{
-    width: 70px;
-    height: 70px; 
-    filter: drop-shadow(10px 10px 5px rgba(182, 179, 179, 0.678));
+    position: relative;
+    top: 65%;
+    width: 50%; 
+
+    
 }
 
 /* --------------------------------------- -->*/
@@ -47,9 +54,9 @@
 /* --------------------------------------- -->*/
 /* ---------------CARRITO ---------------- -->*/
 
-/*.carrito-compra{
+.carrito-compra{
     display: none;
-}*/
+}
 
 .navfootercarrito{
     box-sizing: border-box;
