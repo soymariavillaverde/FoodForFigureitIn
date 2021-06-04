@@ -9,8 +9,7 @@
         justify-content: space-between;
         overflow-x: scroll;
         width: 100%;
-        height: 190px; 
-        margin-bottom: 3%;
+        height: 190px;
         filter: drop-shadow(10px 10px 30px white);
         
 }
@@ -22,7 +21,8 @@
         width: 20%;
         height: 180px;
         margin-left: 10px; 
-        margin-top: 10px;    
+        position: relative;
+        top: -1px;
 }
 .button-slider {
         display: flex;
@@ -57,17 +57,18 @@
 .SeccionesNav {
         color: black;
         font-size: 18px; 
-          
+        font-family: 'Public Sans', sans-serif ;  
 }
 
 .SeccionesNav2 {
         color: black;
         font-size: 18px; 
-          
+        font-family: 'Public Sans', sans-serif ;  
 }
 .SeccionesNav3 {
         color: black;
-        font-size: 18px; 
+        font-size: 18px;
+        font-family: 'Public Sans', sans-serif ; 
 }
 
 @media  (max-width: 480px) { 
@@ -86,20 +87,22 @@
         }
         .SeccionesNav {
                 color: black;
-                font-size: 10px; 
+                font-size: 12px; 
                 margin-top: 20px;
+                font-family: 'Public Sans', sans-serif ;
         }
         .SeccionesNav2 {
                 color: black;
-                font-size: 10px; 
+                font-size: 12px; 
                 margin-top: 20px;
+                font-family: 'Public Sans', sans-serif ;
                 
         }
         .SeccionesNav3 {
                 color: black;
-                font-size: 10px; 
+                font-size: 12px; 
                 margin-top: 20px;
-                
+                font-family: 'Public Sans', sans-serif ;
         }
 
         
