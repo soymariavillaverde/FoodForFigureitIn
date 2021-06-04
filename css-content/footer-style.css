@@ -27,38 +27,35 @@
 .tamañoimgfooter{
     width: 25px;
 }
-.button-compr{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: none;
-    width: 20%;
-    padding-bottom: 11%;
-    top: -40px;
-    background-color: #FF6B00;
-    border-radius: 100%;
-    filter: drop-shadow(10px 10px 5px rgba(182, 179, 179, 0.678));
-}
+
 .imgbutton-compra{
-    top: 65%;
-    width: 70%; 
-}
-
-.button-compra {
-    width: 55px;
-    height: 55px;
+    top: 65%;;
+    width: 50%;
     position: relative;
-    top: -20px;
-    border-radius: 100px;
-    border: none;
-    background-color: #FF6B00;
-    filter: drop-shadow(10px 10px 5px rgba(182, 179, 179, 0.678));
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
-
+@media (min-width:450px) {
+    .button-compra{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        width: 12%;
+        padding-bottom: 7%;
+        top: -40px;
+        background-color: #FF6B00;
+        border-radius: 100%;
+        filter: drop-shadow(10px 10px 5px rgba(182, 179, 179, 0.678));
+    }
+    .imgbutton-compra{
+        top: 65%;
+        width: 50%;
+        position: relative;
+    
+    
+    
+}
+}
 /* --------------------------------------- -->*/
 /* --------------------------------------- -->*/
 /* --------------------------------------- -->*/
@@ -78,16 +75,16 @@
     background-color: #ffffff;
     border-radius: 100%;
     position: fixed;
+    left:0;
     bottom: 0;
-    
-    
+    z-index: 10;
+    display: flex;
+    justify-content: center;
 }
 
 
 .factura{
-    box-sizing: border-box;
     width: 100%;
-    height: 250px;
     max-width: 720px;
     max-height: 550px;
     background-color: #FF6B00;
@@ -95,15 +92,19 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    padding: 7%;
+    align-items: center;
+    padding: 20px;
+    padding-bottom: 5px;
+    bottom: 0;
 
 }
 
 .concepto-factura{
     position: relative;
+    width: 100%;
     display: flex; 
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .p-basico-factura{
@@ -119,28 +120,34 @@
     font-size: calc(0.6em + 1vw);
     font-weight: 600;
     color: white;
+    position: relative;
 }
 
 .contenedor-boton-enviar{
     display: flex;
     justify-content: space-around;
-
+    height: fit-content;
+    box-sizing: content-box;
+    position: relative;
 }
 
 .enviar-pedido{
-    width: 85%;
-    height: 80%;
+    width: 100%;
     background-color: white;
     border: none;
     border-radius: 40px;
     display: flex;
     justify-content: center;
-    
+    box-sizing: border-box;  
+    position: relative;  
+    align-items: center;
+    padding: 15px;
 }
 
 .texto-enviar{
     font-family: 'Public Sans', sans-serif ;
     font-size: calc(1.5em + 1vw);
     font-weight: 600;
-    margin: none;
+    margin: 0;
+    position: relative;
 }
