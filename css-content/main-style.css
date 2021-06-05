@@ -78,8 +78,8 @@ main {
 .contador {
     display: flex;
     flex-direction: column-reverse;
+    align-items: center;
 }
-
 .menos, .mas {
     border: none;
     background-color: rgb(243, 243, 243);
@@ -89,10 +89,6 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-.menos{
-    position: relative;
-    top: -10px;
 }
 
 .signo+{
@@ -106,9 +102,13 @@ main {
  }
 
  .numeroContador{
-     margin-left: 13px;
-     position: relative;
-     top: -7px;
+     width: 22px;
+     height: 40px;
+     border: none;
+     display: flex;
+     text-align: center;
+     padding: 0;
+
  }
 
 /* --------------------------------------- -->*/

@@ -4,8 +4,7 @@ function mostrarCarrito() { /* Onclick en el boton naranja */
     
     if (carro.style.display === 'none') { /* si el carro no se ve ... */
         carro.style.display = 'block'; /* mostrará el carro */
-        paginaPrincipal.style.display = 'none'; /* ocultará la pagina principal*/
-        
+        paginaPrincipal.style.display = 'none'; /* ocultará la pagina principal*/  
     } else {                           /* Si no ... */
         carro.style.display = 'none';  /* no lo muestra */
     }
