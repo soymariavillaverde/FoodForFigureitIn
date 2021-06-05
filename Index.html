@@ -83,7 +83,7 @@
                                         <h1 class="signo-">-</h1>
                                     </button>
                                     <input class="numeroContador" value=0 ></input>
-                                    <button class="mas" onclick="añadirPlato(this)" >
+                                    <button class="mas" onclick="añadirPlato(this)">
                                         <h2 class="signo+">+</h2>
                                     </button>
                                 </div>
@@ -259,9 +259,11 @@
                 <!-- --------------------------------------- -->
                 <!-- --------------------------------------- -->
                 <!-- CARRITO -->
+
+                
                 <div class="carrito-compra" >
                     <!-- Header Carrito -->
-                    <header>
+                    <header id="topCarrito">
                         <div class="menu-superior">
                             <img class="logo" src="Img/Header/Logo.png" alt="LogoFoodHouse">
                                 <button class="buttonNavCarrito" onclick="mostrarPrincipal()" > 
@@ -279,9 +281,9 @@
 
                     <!-- Main Carrito -->
                     
-                    
+                    <!-- 
                     <main class= "platosCarrito">
-                        <div class="plato-individual">
+                        <div class="plato-individual-carrito">
                             <div class="img-plato">
                                 <img class="plato-comida" src="Img/Imagenes comida/imagenes restaurant-01.jpg" alt="Chicken Vegi Salad">
                             </div>
@@ -302,7 +304,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="plato-individual">
+                        <div class="plato-individual-carrito" id="leon">
                             <div class="img-plato">
                                 <img class="plato-comida" src="Img/Imagenes comida/imagenes restaurant-02.jpg" alt="Mutton Curry">
                             </div>
@@ -313,11 +315,11 @@
                             </div>  
                             <div class="nombreYcontador">
                                 <div class="contador">
-                                    <button class="menos">
+                                    <button class="menos" onclick="quitarPlato(this)" >
                                         <h1 class="signo-">-</h1>
                                     </button>
-                                    <p class="numeroContador">1</p>
-                                    <button class="mas">
+                                    <input class="numeroContador" value=0 ></input>
+                                    <button class="mas" onclick="añadirPlato(this)" >
                                         <h2 class="signo+">+</h2>
                                     </button>
                                 </div>
@@ -450,6 +452,7 @@
                             </div>
                         </div>
                     </main>
+                    -->
                     <!-- ---------------------------------- -->
             
                     <!-- Footer Carrito-->
@@ -481,6 +484,7 @@
                 </div>
             </section>
         <script src="js-content/displayCarro.js"></script> 
-        <script src="js-content/contadores.js"></script>   
+        <script src="js-content/contadores.js"></script>
+        <script src="js-content/displayPlatosCarro.js"></script>   
     </body>
 </html>
