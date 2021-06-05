@@ -8,11 +8,9 @@ main {
 }
 
 .platos {
-    margin-bottom: 30px;
+    margin-bottom: 95px;
     width: 100%;
     overflow-y: scroll;
-    margin-bottom: 110px;
-
 }
 
 .plato-individual{

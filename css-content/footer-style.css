@@ -11,6 +11,7 @@
 }
 .navfooter{
     position: relative;
+    bottom: 0px;
     display: flex;
     justify-content: space-between;
     background-color: rgb(255, 255, 255);
@@ -29,33 +30,25 @@
 }
 
 .imgbutton-compra{
-    top: 65%;;
+    top: 65%;
     width: 50%;
+}
+
+.button-compra{
+    width: 65px;
+    height: 65px;
     position: relative;
+    top: -20px;
+    border: none;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FF6B00;
+    filter: drop-shadow(10px 10px 5px rgba(182, 179, 179, 0.678));
 }
-@media (min-width:450px) {
-    .button-compra{
-        position: relative;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border: none;
-        width: 12%;
-        padding-bottom: 7%;
-        top: -40px;
-        background-color: #FF6B00;
-        border-radius: 100%;
-        filter: drop-shadow(10px 10px 5px rgba(182, 179, 179, 0.678));
-    }
-    .imgbutton-compra{
-        top: 65%;
-        width: 50%;
-        position: relative;
     
-    
-    
-}
-}
+
 /* --------------------------------------- -->*/
 /* --------------------------------------- -->*/
 /* --------------------------------------- -->*/
@@ -68,6 +61,13 @@
     display: none;
 }
 
+.buttonNavCarrito{
+    border: none;
+    background-color: #FFFFFF;
+    display:flex;
+    justify-content: flex-end;
+}
+
 .navfootercarrito{
     width: 100%;
     box-sizing: content-box;
@@ -76,25 +76,30 @@
     border-radius: 100%;
     position: fixed;
     left:0;
-    bottom: 0;
+    bottom: -1px;
     z-index: 10;
     display: flex;
     justify-content: center;
 }
 
+.platosCarrito {
+    margin-bottom: 275px;
+    width: 100%;
+    overflow-y: scroll;
 
+}
 .factura{
     width: 100%;
     max-width: 720px;
     max-height: 550px;
     background-color: #FF6B00;
-    border-radius: 30px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
-    padding-bottom: 5px;
+    padding: 25px;
     bottom: 0;
 
 }
@@ -104,12 +109,12 @@
     width: 100%;
     display: flex; 
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .p-basico-factura{
     font-family: 'Public Sans', sans-serif;
-    font-size: calc(0.5em + 1vw);
+    font-size: calc(0.7em + 1vw);
     font-style:normal;
     color: white;
     margin-top: 1%;
@@ -117,17 +122,9 @@
 
 .p-negrita-factura{
     font-family: 'Public Sans', sans-serif;
-    font-size: calc(0.6em + 1vw);
-    font-weight: 600;
+    font-size: calc(0.8em + 1vw);
+    font-weight: 700;
     color: white;
-    position: relative;
-}
-
-.contenedor-boton-enviar{
-    display: flex;
-    justify-content: space-around;
-    height: fit-content;
-    box-sizing: content-box;
     position: relative;
 }
 
@@ -135,7 +132,7 @@
     width: 100%;
     background-color: white;
     border: none;
-    border-radius: 40px;
+    border-radius: 20px;
     display: flex;
     justify-content: center;
     box-sizing: border-box;  
