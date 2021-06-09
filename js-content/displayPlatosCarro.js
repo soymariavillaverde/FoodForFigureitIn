@@ -8,7 +8,7 @@
     funcion de vaciar carrito
 
 */ 
-
+/*
 let listaPlatosNode = document.querySelectorAll(".plato-individual");
 let listaPlatos = Array.from(listaPlatosNode);
 
@@ -17,7 +17,7 @@ let listaCarrito = [];
 let akfafn = document.querySelectorAll(".mas");
 let listaSumadores = Array.from(akfafn);
 
-
+*/
 
 /*
 console.log(listaPlatos[0]);
@@ -26,10 +26,11 @@ console.log(cosa);
 let cosaVariable = cosa.value;
 console.log(cosaVariable);
 */
-
+/*
 function detectarSuma(btnSuma) {
     let padreBtnSuma = btnSuma.parentNode;
     let contador = padreBtnSuma.querySelector(".numeroContador");
 
     console.log(padreBtnSuma);
 }
+*/
