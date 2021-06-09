@@ -74,8 +74,10 @@ let cartaDePlatos = [
 
 //Imprimir todos los platos
 
-function imprimir (listaObjetos){
-    let mainPlatos = document.querySelector(".platos");
+let localizacion = ".platos";
+
+function imprimir (listaObjetos, localizacion){
+    let mainPlatos = document.querySelector(localizacion);
     let plato= "";
 
     listaObjetos.forEach(function (objeto){
@@ -91,13 +93,13 @@ function imprimir (listaObjetos){
             </div>
             <div class="nombreYcontador">
                 <div class="contador">
-                    <button class="menos" onclick="quitarPlato(this, 0)" >
+                    <button class="menos" class= "pulse" onclick="quitarPlato(this, ${objeto.id})" >
                         <h1 class="signo-">-</h1>
                     </button>
     
                     <input class="numeroContador" value=${objeto.cantidad}></input>
     
-                    <button class="mas" onclick="añadirPlato(this, 0)">
+                    <button class="mas pulse" class= "pulse" onclick="añadirPlato(this, ${objeto.id})">
                         <h2 class="signo+">+</h2>
                     </button>
                 </div>
@@ -108,7 +110,7 @@ function imprimir (listaObjetos){
 
     mainPlatos.innerHTML = plato;
 }
-imprimir(cartaDePlatos);
+imprimir(cartaDePlatos, localizacion);
 
 //Filtrar los platos
 
@@ -121,7 +123,7 @@ function impFiltros(filtro){
         }
     })
 
-    imprimir(arrayFiltrado);
+    imprimir(arrayFiltrado, localizacion);
 }
 
 

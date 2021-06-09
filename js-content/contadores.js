@@ -49,7 +49,7 @@ let muchosPlatos = [
     },
     {
         "id": 6,
-        "img": "Img/Imagenes comida/imagenes restaurant-06.jpeg",
+        "img": "Img/Imagenes comida/imagenes restaurant-06.jpg",
         "nombre": "Cake du chocolat",
         "precio": 3.99,
         "descripcion":"Chocolate, chocolate negro y nata.",
@@ -57,7 +57,7 @@ let muchosPlatos = [
     },
     {
         "id": 7,
-        "img": "Img/Imagenes comida/imagenes restaurant-07.jpeg",
+        "img": "Img/Imagenes comida/imagenes restaurant-07.jpg",
         "nombre": "Hamburguesa con queso",
         "precio": 3.99,
         "descripcion":"Carne de vaca, lechuga, quese cheddar y pan con sésamo.",
@@ -67,15 +67,33 @@ let muchosPlatos = [
 let contadorArray = muchosPlatos.map(function(obj){
     return obj.cantidad 
 });
+//Funcio Suma 
 
-function añadirPlato(botonSuma, id) {
+let displayCarrito = [];
+//imprimir(displayCarrito, ".platosCarrito")
+
+
+function añadirPlato(botonSuma, iD) {
     let padreBotonSuma = botonSuma.parentNode;
     let contador = padreBotonSuma.querySelector(".numeroContador");
     
-    contadorArray[id] = contadorArray[id] + 1;
+    contadorArray[iD] = contadorArray[iD] + 1;
 
-    contador.value = contadorArray[id];
+    contador.value = contadorArray[iD];
+
 }
+/*
+//Funcion Diplay Carrito
+if (contador.value >0) {
+
+    let objEncontrado = muchosPlatos.filter(plato => plato.id == iD)
+    displayCarrito.push(objEncontrado[0])
+    
+}*/
+
+console.log(displayCarrito)
+
+//Funcion Resta
 
 function quitarPlato(botonResta, id) {
     let padreBotonResta = botonResta.parentNode;
@@ -86,4 +104,5 @@ function quitarPlato(botonResta, id) {
 
         contador.value = contadorArray[id];
     }     
+
 }
