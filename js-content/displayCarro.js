@@ -10,6 +10,8 @@ function mostrarCarrito() { /* Onclick en el boton naranja */
     } else {                           /* Si no ... */
         carro.style.display = 'none';  /* no lo muestra */
     }
+
+    imprimir(carrito,".platosCarrito");
 }
 
 function mostrarPrincipal() { /* onclick en el boton back del carrito, es lo mismo pero cambiando block por none */
@@ -23,3 +25,4 @@ function mostrarPrincipal() { /* onclick en el boton back del carrito, es lo mis
         carro.style.display = 'block';
     }
 }
+

@@ -72,14 +72,13 @@ let cartaDePlatos = [
         "categoria": "Fast Food"
     }];
 
-//Imprimir todos los platos
+//Imprimir todos los platos --------------------------------------------------------------
 
 let localizacion = ".platos";
 
 function imprimir (listaObjetos, localizacion){
     let mainPlatos = document.querySelector(localizacion);
     let plato= "";
-
     listaObjetos.forEach(function (objeto){
         plato += `
         <div class="plato-individual">
@@ -93,13 +92,13 @@ function imprimir (listaObjetos, localizacion){
             </div>
             <div class="nombreYcontador">
                 <div class="contador">
-                    <button class="menos" class= "pulse" onclick="quitarPlato(this, ${objeto.id})" >
+                    <button class="menos" onclick="quitarPlato(this, ${objeto.id})" >
                         <h1 class="signo-">-</h1>
                     </button>
     
                     <input class="numeroContador" value=${objeto.cantidad}></input>
     
-                    <button class="mas pulse" class= "pulse" onclick="añadirPlato(this, ${objeto.id})">
+                    <button class="mas" onclick="añadirPlato(this, ${objeto.id})">
                         <h2 class="signo+">+</h2>
                     </button>
                 </div>
@@ -107,79 +106,72 @@ function imprimir (listaObjetos, localizacion){
         </div>
         `;
     });
-
     mainPlatos.innerHTML = plato;
 }
 imprimir(cartaDePlatos, localizacion);
 
-//Filtrar los platos
-
+//Filtrar los platos  ----------------------------------------------------------------------------
 function impFiltros(filtro){
     let arrayFiltrado = [];
-
     cartaDePlatos.forEach(function(objeto){
         if (objeto.categoria == filtro) {
-            arrayFiltrado.push(objeto)
-        }
+            arrayFiltrado.push(objeto);
+        };
     })
-
     imprimir(arrayFiltrado, localizacion);
-}
+};
 
 function impTop(){
-    imprimir(cartaDePlatos, localizacion)
-}
+    imprimir(cartaDePlatos, localizacion);
+};
 
-
-// Funciones suma resta y display plato carrito
-
-let contadorArray = cartaDePlatos.map(function(obj){
-    return obj.cantidad 
-});
-//Funcio Suma 
-
-//let displayCarrito = [];
-//imprimir(displayCarrito, ".platosCarrito")
-
-
+// Funciones suma resta y display block y none platos carrito  -----------------------------------
+let carrito = []; //imprimir(carrito, ".platosCarrito"); boton naranjaaa
+//Funcio Suma añadir a carrito                                     
 function añadirPlato(botonSuma, iD) {
-    let padreBotonSuma = botonSuma.parentNode;
-    let contador = padreBotonSuma.querySelector(".numeroContador");
-    
-    cartaDePlatos[iD].cantidad = cartaDePlatos[iD].cantidad + 1;
-
-    contador.value = cartaDePlatos[iD].cantidad;
-
-    let foundCarta = cartaDePlatos.filter(element => element.cantidad > 0);
-    
-    let carrito = [];
-    carrito.push(foundCarta);
-
-    imprimir(carrito[0], ".platosCarrito")
-    //let foundCarrito = carrito[0].filter(element => element.cantidad == 0)
-
-    loquesea(carrito)
+    upDateContador(botonSuma, siExisteEnCarritoSum( encontrarObj(iD) ) )
 }
+function encontrarObj(iD){
+    let objFound = cartaDePlatos.find(plato => plato.id == iD);
+    return objFound
+}
+function siExisteEnCarritoSum(objExiste){ // si no esta en el carrito suma y añade
+    if (carrito.includes(objExiste) == false){
+        objExiste.cantidad++;
+        carrito.push(objExiste)
+    }else {                              // si, si esta en el carrito solo suma
+        objExiste.cantidad++;
+    }
+    return objExiste.cantidad
+}
+function upDateContador(elementHTML, objValueCantidad){
+    let padreElementHTML = elementHTML.parentNode;
+    let contador = padreElementHTML.querySelector(".numeroContador");
 
-//Funcion Diplay Carrito
-function loquesea (carritoP){
-    console.log(carritoP)
+    contador.value = objValueCantidad;
+}
+function siExisteEnCarritoRest(objExiste){ 
+    if (carrito.includes(objExiste) == true){ // si es verdad que esta en el carrito y es >0 restara
+        if (objExiste.cantidad > 0) {
+            objExiste.cantidad--;
+        }
+        if (objExiste.cantidad == 0) {       // si la cantidad es 0 se eliminara del carrito
+            let index = carrito.indexOf(objExiste)
+            //console.log(index)
+            //console.log(carrito)
+            carrito.splice(index, 1);
+            //console.log(carrito)
+            imprimir(carrito, ".platosCarrito")
+        }
+    }
+    return objExiste.cantidad
 }
 //Funcion Resta
-
-function quitarPlato(botonResta, iD, carritoPResta) {
-    let padreBotonResta = botonResta.parentNode;
-    let contador = padreBotonResta.querySelector(".numeroContador");
-    
-    if (cartaDePlatos[iD].cantidad > 0){
-        cartaDePlatos[iD].cantidad = cartaDePlatos[iD].cantidad - 1;
-        if (cartaDePlatos[iD].cantidad == 0) {
-            console.log(cartaDePlatos[iD])
-            let index  =  carritoPResta.indexOf(cartaDePlatos[iD])
-            carritoPResta.splice(index,1)
-            
-        }
-        contador.value = cartaDePlatos[iD].cantidad;
-    }     
-
+function quitarPlato(botonResta, iD) {
+    upDateContador(botonResta, siExisteEnCarritoRest( encontrarObj(iD) ) )
+}
+//Boton vaciar carrito --------------------------------------------------------------------------
+function vaciarCarrito(){
+    carrito = [];
+    imprimir(carrito,".platosCarrito");
 }
