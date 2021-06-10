@@ -138,7 +138,7 @@ let contadorArray = cartaDePlatos.map(function(obj){
 });
 //Funcio Suma 
 
-let displayCarrito = [];
+//let displayCarrito = [];
 //imprimir(displayCarrito, ".platosCarrito")
 
 
@@ -150,28 +150,35 @@ function añadirPlato(botonSuma, iD) {
 
     contador.value = cartaDePlatos[iD].cantidad;
 
-    let encontrados = cartaDePlatos.filter(plato => plato.cantidad > 0)
-    displayCarrito.push(encontrados)
-    console.log(encontrados)
+    let foundCarta = cartaDePlatos.filter(element => element.cantidad > 0);
+    
+    let carrito = [];
+    carrito.push(foundCarta);
+
+    imprimir(carrito[0], ".platosCarrito")
+    //let foundCarrito = carrito[0].filter(element => element.cantidad == 0)
+
+    loquesea(carrito)
 }
 
 //Funcion Diplay Carrito
-
-
-
-
-
-//imprimir(displayCarrito, ".platosCarrito")
-
+function loquesea (carritoP){
+    console.log(carritoP)
+}
 //Funcion Resta
 
-function quitarPlato(botonResta, iD) {
+function quitarPlato(botonResta, iD, carritoPResta) {
     let padreBotonResta = botonResta.parentNode;
     let contador = padreBotonResta.querySelector(".numeroContador");
     
     if (cartaDePlatos[iD].cantidad > 0){
         cartaDePlatos[iD].cantidad = cartaDePlatos[iD].cantidad - 1;
-
+        if (cartaDePlatos[iD].cantidad == 0) {
+            console.log(cartaDePlatos[iD])
+            let index  =  carritoPResta.indexOf(cartaDePlatos[iD])
+            carritoPResta.splice(index,1)
+            
+        }
         contador.value = cartaDePlatos[iD].cantidad;
     }     
 
