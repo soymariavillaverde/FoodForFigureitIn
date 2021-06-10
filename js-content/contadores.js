@@ -1,4 +1,5 @@
-let muchosPlatos = [
+
+/*let muchosPlatos = [
     {
         "id": 0,
         "img": "Img/Imagenes comida/imagenes restaurant-01.jpg",
@@ -64,7 +65,7 @@ let muchosPlatos = [
         "cantidad": 0
     }];
 
-let contadorArray = muchosPlatos.map(function(obj){
+let contadorArray = cartaDePlatos.map(function(obj){
     return obj.cantidad 
 });
 //Funcio Suma 
@@ -77,21 +78,19 @@ function añadirPlato(botonSuma, iD) {
     let padreBotonSuma = botonSuma.parentNode;
     let contador = padreBotonSuma.querySelector(".numeroContador");
     
-    contadorArray[iD] = contadorArray[iD] + 1;
+    cartaDePlatos[iD].cantidad = cartaDePlatos[iD].cantidad + 1;
 
-    contador.value = contadorArray[iD];
+    contador.value = cartaDePlatos[iD].cantidad;
 
 }
-/*
+
 //Funcion Diplay Carrito
-if (contador.value >0) {
 
-    let objEncontrado = muchosPlatos.filter(plato => plato.id == iD)
-    displayCarrito.push(objEncontrado[0])
-    
-}*/
 
+displayCarrito = cartaDePlatos.filter(plato => plato.cantidad > 0)
 console.log(displayCarrito)
+
+imprimir(displayCarrito, ".platosCarrito")
 
 //Funcion Resta
 
@@ -106,3 +105,4 @@ function quitarPlato(botonResta, id) {
     }     
 
 }
+*/

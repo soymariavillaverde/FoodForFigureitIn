@@ -126,5 +126,53 @@ function impFiltros(filtro){
     imprimir(arrayFiltrado, localizacion);
 }
 
+function impTop(){
+    imprimir(cartaDePlatos, localizacion)
+}
 
 
+// Funciones suma resta y display plato carrito
+
+let contadorArray = cartaDePlatos.map(function(obj){
+    return obj.cantidad 
+});
+//Funcio Suma 
+
+let displayCarrito = [];
+//imprimir(displayCarrito, ".platosCarrito")
+
+
+function añadirPlato(botonSuma, iD) {
+    let padreBotonSuma = botonSuma.parentNode;
+    let contador = padreBotonSuma.querySelector(".numeroContador");
+    
+    cartaDePlatos[iD].cantidad = cartaDePlatos[iD].cantidad + 1;
+
+    contador.value = cartaDePlatos[iD].cantidad;
+
+    let encontrados = cartaDePlatos.filter(plato => plato.cantidad > 0)
+    displayCarrito.push(encontrados)
+    console.log(encontrados)
+}
+
+//Funcion Diplay Carrito
+
+
+
+
+
+//imprimir(displayCarrito, ".platosCarrito")
+
+//Funcion Resta
+
+function quitarPlato(botonResta, iD) {
+    let padreBotonResta = botonResta.parentNode;
+    let contador = padreBotonResta.querySelector(".numeroContador");
+    
+    if (cartaDePlatos[iD].cantidad > 0){
+        cartaDePlatos[iD].cantidad = cartaDePlatos[iD].cantidad - 1;
+
+        contador.value = cartaDePlatos[iD].cantidad;
+    }     
+
+}
