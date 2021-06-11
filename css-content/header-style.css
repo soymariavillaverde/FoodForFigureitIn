@@ -75,8 +75,10 @@
     background-color: #FFFFFF;
     display:flex;
     padding: 0px;
+    position: relative;
+    right: 75px;
 }
 
 .imgeliminar{
-    width: 13%;
+    width: 50px;
 }

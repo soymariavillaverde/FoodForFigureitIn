@@ -12,7 +12,8 @@ function mostrarCarrito() { /* Onclick en el boton naranja */
     }
 
     imprimir(carrito,".platosCarrito");
-}
+    imprimirFactura(impriTotalFactura(),".navfootercarrito");
+};
 
 function mostrarPrincipal() { /* onclick en el boton back del carrito, es lo mismo pero cambiando block por none */
     let carro = document.querySelector(".carrito-compra");

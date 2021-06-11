@@ -3,6 +3,7 @@ let carrito = []; //imprimir(carrito, ".platosCarrito"); boton naranjaaa
 //Funcio Suma añadir a carrito                                     
 function añadirPlato(botonSuma, iD) {
     upDateContador(botonSuma, siExisteEnCarritoSum( encontrarObj(iD) ) )
+    imprimirFactura(impriTotalFactura(),".navfootercarrito");
 }
 function encontrarObj(iD){
     let objFound = cartaDePlatos.find(plato => plato.id == iD);
@@ -41,10 +42,13 @@ function siExisteEnCarritoRest(objExiste){
 }
 //Funcion Resta
 function quitarPlato(botonResta, iD) {
-    upDateContador(botonResta, siExisteEnCarritoRest( encontrarObj(iD) ) )
+    upDateContador(botonResta, siExisteEnCarritoRest( encontrarObj(iD) ) );
+    imprimirFactura(impriTotalFactura(),".navfootercarrito");
 }
 //Boton vaciar carrito --------------------------------------------------------------------------
 function vaciarCarrito(){
     carrito = [];
     imprimir(carrito,".platosCarrito");
+    lll = [{"subTotal":0, "tasasIMP":0, "delivery":0, "total":0}]
+    imprimirFactura(lll,".navfootercarrito");
 }
